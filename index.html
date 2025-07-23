@@ -115,8 +115,8 @@
   <script type="module">
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-    const supabaseUrl = 'Chave URL DO PROJETO';
-    const supabaseKey = 'Sua chave secreta';
+    const supabaseUrl = 'https://khmlszszrhemfznygols.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtobWxzenN6cmhlbWZ6bnlnb2xzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMxODg5MDMsImV4cCI6MjA2ODc2NDkwM30.5Ah8bCx2HIONIBz-OZB9Tfx9m8hyOMlUbR7Gws6DKbE';
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     document.querySelector('form').addEventListener('submit', async function (event) {
@@ -137,7 +137,7 @@
           alert('Erro ao fazer login: ' + error.message);
         } else {
           alert('Login realizado com sucesso!');
-          window.location.href = '/crud.html';
+          window.location.href = 'crud.html';
         }
       } catch (err) {
         console.error('Erro inesperado:', err);
